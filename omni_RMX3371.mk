@@ -16,14 +16,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 # Enable virtual A/B OTA
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota.mk)
 
-# Inherit some common twrp stuff.
-$(call inherit-product, vendor/twrp/config/common.mk)
+# Inherit some common pb stuff.
+$(call inherit-product, vendor/pb/config/common.mk)
 
 # Inherit from RMX3371 device
 $(call inherit-product, device/realme/RMX3371/device.mk)
 
 PRODUCT_DEVICE := RMX3371
-PRODUCT_NAME := twrp_RMX3371
+PRODUCT_NAME := omni_RMX3371
 PRODUCT_BRAND := realme
 PRODUCT_MODEL := GT Neo 3T
 PRODUCT_MANUFACTURER := realme
